@@ -18,8 +18,9 @@
 
   --card-border-color: #eeeeee;
   --header-overlay: rgba(47, 48, 58, 0.4);
-  --header-bg:#C4C4C4;
+  --header-bg: #c4c4c4;
   --icon-marits-color: #f5f4fa;
+  --icon-heder-color: #757575;
 }
 
 html {
@@ -177,6 +178,28 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+/* TODO sprite for connect */
+
+.connect-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  fill: var(--icon-heder-color);
+}
+
+.connect-icon:hover,
+.smartphone:hover {
+  fill: var(--primary-color);
+}
+
+.smartphone {
+  width: 10px;
+  height: 16px;
+}
+
+/* TODO sprite for connect end*/
 
 .connect {
   display: flex;
@@ -336,25 +359,21 @@ img {
 
 /*TODO icons-svg marits section*/
 
-.marits-icon-thumb{
-	width: 270px;
-	height: 120px;	
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: var(--icon-marits-color);
-	margin-bottom: 30px;
-	
+.marits-icon-thumb {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--icon-marits-color);
+  margin-bottom: 30px;
 }
-.marits-icon{
-	width: 70px;
-	height: 70px;	
+.marits-icon {
+  width: 70px;
+  height: 70px;
 }
 
 /*TODO icons-svg marits section end*/
-
-
-
 
 /* marits section end */
 
@@ -548,4 +567,3 @@ img {
   color: var(--color-zsix);
   padding: 0;
 }
-
