@@ -17,6 +17,7 @@
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
   --card-border-color: #eeeeee;
+  --header-overlay: rgba(47, 48, 58, 0.4);
 }
 
 html {
@@ -235,6 +236,14 @@ img {
   padding-bottom: 200px;
   background-color: var(--background-slogan);
   text-align: center;
+  background-image: linear-gradient(
+      var(--header-overlay),
+      var(--header-overlay)
+    ),
+    url(../images/workin-day.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-title {
