@@ -515,9 +515,6 @@ img {
 }
 
 .clients-item {
-  text-align: center;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
   width: 170px;
   height: 90px;
 }
@@ -526,22 +523,32 @@ img {
   margin-right: 30px;
 }
 
-.clients-icon {
+/* .clients-icon {
+  fill: var(--clients-color-icon);
+} */
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   fill: var(--clients-color-icon);
 }
-/* ============== */
 
-.yaco-item {
-  padding: 20px 62.73px 20.77px 63px;
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--primary-color);
+  fill: var(--primary-color);
 }
+
+/* ============== */
 
 .yaco-icon {
   width: 44.27px;
   height: 49.23px;
-}
-
-.here-item {
-  padding: 19px 65px;
 }
 
 .here-icon {
@@ -549,17 +556,9 @@ img {
   height: 52px;
 }
 
-.leaf-item {
-  padding: 24px 64px 23.4px 65px;
-}
-
 .leaf-icon {
   width: 41px;
   height: 42.6px;
-}
-
-.foster-item {
-  padding: 24px 45.34px 23.98px 45px;
 }
 
 .foster-icon {
@@ -567,17 +566,9 @@ img {
   height: 42.02px;
 }
 
-.brand-item {
-  padding: 22px 55px 21px 56px;
-}
-
 .brand-icon {
   width: 59px;
   height: 47px;
-}
-
-.tagline-item {
-  padding: 22px 40.52px 22.56px 41px;
 }
 
 .tagline-icon {
@@ -586,16 +577,6 @@ img {
 }
 
 /* ================= */
-
-.clients-icon:hover,
-.clients-icon:focus {
-  fill: var(--primary-color);
-}
-
-.clients-item:hover,
-.clients-item:focus {
-  border: 1px solid var(--primary-color);
-}
 
 /*? Clients section end */
 
