@@ -29,7 +29,9 @@
   --footer-social-color: #fff;
   --footer-social-color-bg: rgba(255, 255, 255, 0.1);
   --btn-portfolio-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  --portfolio-card-shadow:0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  --portfolio-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  --clients-color-icon: #afb1b8;
 }
 
 html {
@@ -494,6 +496,109 @@ img {
 /* TODO team svg icon end */
 /* team section end*/
 
+/*? Clients section */
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.clients-item {
+  text-align: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-icon {
+  fill: var(--clients-color-icon);
+}
+/* ============== */
+
+.yaco-item {
+  padding: 20px 62.73px 20.77px 63px;
+}
+
+.yaco-icon {
+  width: 44.27px;
+  height: 49.23px;
+}
+
+.here-item {
+  padding: 19px 65px;
+}
+
+.here-icon {
+  width: 40px;
+  height: 52px;
+}
+
+.leaf-item {
+  padding: 24px 64px 23.4px 65px;
+}
+
+.leaf-icon {
+  width: 41px;
+  height: 42.6px;
+}
+
+.foster-item {
+  padding: 24px 45.34px 23.98px 45px;
+}
+
+.foster-icon {
+  width: 79.66px;
+  height: 42.02px;
+}
+
+.brand-item {
+  padding: 22px 55px 21px 56px;
+}
+
+.brand-icon {
+  width: 59px;
+  height: 47px;
+}
+
+.tagline-item {
+  padding: 22px 40.52px 22.56px 41px;
+}
+
+.tagline-icon {
+  width: 88.48px;
+  height: 45.44px;
+}
+
+/* ================= */
+
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--primary-color);
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border: 1px solid var(--primary-color);
+}
+
+/*? Clients section end */
+
 /*?PORTFOLIO */
 
 .portfolio-list-button {
@@ -518,7 +623,6 @@ img {
   color: var(--main-color);
   border-radius: 4px;
   border-color: transparent;
-   
 }
 
 .btn-portfolio:hover,
@@ -533,19 +637,7 @@ img {
   color: var(--primary-color);
 }
 
-/* .btn-portfolio {
-  font-weight: 500;
-} */
-
 /*! reticle portfolio*/
-
-/* .portfolio-pointers {
-  display: flex;
-  flex-wrap: wrap;
-
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
-} */
 
 .portfolio-pointers > .portfolio-point {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
@@ -556,8 +648,8 @@ img {
 }
 
 .portfolio-point:hover,
-.portfolio-point:focus{
-	box-shadow: var(--portfolio-card-shadow);
+.portfolio-point:focus {
+  box-shadow: var(--portfolio-card-shadow);
 }
 
 .portfolio-info {
@@ -616,9 +708,6 @@ img {
   color: var(--color-zsix);
   padding: 0;
 }
-
-
-
 
 /* for social in foter */
 
