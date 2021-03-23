@@ -21,6 +21,13 @@
   --header-bg: #c4c4c4;
   --icon-marits-color: #f5f4fa;
   --icon-heder-color: #757575;
+  --team-member-bg: #ffffff;
+  --icon-team-color: #afb1b8;
+  --icon-team-fill-hover: #fff;
+  --social-hover-color: #2196f3;
+  --secondary-title-color: #fff;
+  --footer-social-color: #fff;
+  --footer-social-color-bg: rgba(255, 255, 255, 0.1);
 }
 
 html {
@@ -367,7 +374,9 @@ img {
   align-items: center;
   background-color: var(--icon-marits-color);
   margin-bottom: 30px;
+  border-radius: 4px;
 }
+
 .marits-icon {
   width: 70px;
   height: 70px;
@@ -410,10 +419,10 @@ img {
 .team-list > .team-member {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
 }
-
+/*! reticle team end */
 .team-info {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 
 .team-name {
@@ -434,24 +443,53 @@ img {
 }
 
 .team-member {
+  background-color: var(--team-member-bg);
   box-shadow: var(--card-shadow);
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
 }
 
-/*! reticle team end */
-
 .team {
   background-color: var(--btn-bg-color);
 }
 
-.team-name:hover,
-.team-name:focus,
-.team-position:hover,
-.team-position:focus {
-  color: var(--primary-color);
+/* TODO team svg icon */
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-bottom: 30px;
 }
 
+.social-item {
+  text-align: center;
+  margin-right: 10px;
+}
+
+.social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  margin: 0;
+  border-radius: 50%;
+}
+
+.social-link:hover {
+  background-color: var(--social-hover-color);
+}
+
+.social-icon {
+  fill: var(--icon-team-color);
+}
+
+.social-icon:hover {
+  fill: var(--icon-team-fill-hover);
+}
+
+/* TODO team svg icon end */
 /* team section end*/
 
 /*?PORTFOLIO */
@@ -552,7 +590,9 @@ img {
 }
 
 .logoF {
-  margin-bottom: 20px;
+  display: block;
+  margin: 0px;
+  padding: 0px;
 }
 
 .address {
@@ -567,3 +607,42 @@ img {
   color: var(--color-zsix);
   padding: 0;
 }
+
+
+
+
+/* for social in foter */
+
+.social,
+.footer-info {
+  display: inline-block;
+}
+
+.social {
+  margin-left: 70px;
+}
+
+.social-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+  margin-bottom: 20px;
+}
+
+.fi-social {
+  fill: var(--footer-social-color);
+}
+
+.fi-social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  margin: 0;
+  border-radius: 50%;
+  background-color: var(--footer-social-color-bg);
+}
+
+/* for social in footer end */
