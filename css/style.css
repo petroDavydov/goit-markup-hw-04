@@ -192,22 +192,36 @@ img {
 
 /* TODO sprite for connect */
 
-.connect-icon {
+.connect-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  fill: var(--icon-heder-color);
+  color: var(--color-link);
+  font-weight: 500;
+}
+
+.connect-link:hover,
+.connect-link:focus {
+  fill: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.envelope-icon {
   width: 16px;
   height: 12px;
-  margin-right: 10px;
-  margin-bottom: 0;
-  fill: var(--icon-heder-color);
 }
 
-.connect-icon:hover,
-.smartphone:hover {
-  fill: var(--primary-color);
-}
-
-.smartphone {
+.smartphone-icon {
   width: 10px;
   height: 16px;
+}
+
+.connect-icon {
+  margin-right: 10px;
+  margin-bottom: 0;
 }
 
 /* TODO sprite for connect end*/
@@ -221,6 +235,7 @@ img {
   margin-left: 50px;
 }
 
+/* LOGO */
 .logo,
 .logo:hover,
 .logo:focus {
@@ -249,19 +264,16 @@ img {
 }
 
 .menu-link:hover,
-.menu-link:focus,
-.linkM:hover,
-.linkM:focus,
-.linkT:hover,
-.linkT:focus {
+.menu-link:focus
+ {
   color: var(--primary-color);
 }
 
-.linkM,
+/* .linkM,
 .linkT {
-  color: var(--color-link);
-  font-weight: 500;
-}
+  /* color: var(--color-link);
+  /* font-weight: 500; */
+/* }  */
 
 /*?HEADER END*/
 
@@ -468,31 +480,27 @@ img {
 }
 
 .social-item {
- width: 44px;
- height: 44px;
- background-color: transparent;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
   margin-right: 10px;
 }
 
 .social-link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;	
-	fill: var(--icon-team-color);
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  fill: var(--icon-team-color);
 }
 
 .social-link:hover,
 .social-link:focus {
   fill: var(--icon-team-fill-hover);
   background-color: var(--primary-color);
-
 }
-
-
 
 /* TODO team svg icon end */
 /* team section end*/
@@ -523,7 +531,6 @@ img {
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
-
 
 .clients-link {
   display: flex;
