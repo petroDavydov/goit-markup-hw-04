@@ -534,7 +534,7 @@ img {
   align-items: center;
   width: 100%;
   height: 100%;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--clients-color-icon);
   border-radius: 4px;
   fill: var(--clients-color-icon);
 }
