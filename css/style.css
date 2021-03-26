@@ -650,7 +650,7 @@ img {
 
 /*?FOOTER */
 
-.wrap-footer-content {
+/* .wrap-footer-content {
   display: flex;
   align-items: baseline;
 }
@@ -686,9 +686,90 @@ img {
   letter-spacing: 0.03em;
   color: var(--color-zsix);
   padding: 0;
-}
+} */
 
 /* for social in foter */
+
+/* .social {
+  margin-left: 70px;
+}
+
+.social-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+  margin-bottom: 20px;
+}
+
+.fi-social {
+  fill: var(--footer-social-color);
+}
+
+.fi-social-link {
+  background-color: var(--footer-social-color-bg);
+} */
+
+/* for social in footer end */
+
+/* 2 variant */
+
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.wrap-footer-content {
+  margin-right: -30px;
+}
+
+.wrap-footer-item {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+  flex-basis: calc((50% - 45px) / 2);
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: var(--background-slogan);
+}
+
+.footer-list {
+  margin-top: 20px;
+}
+
+.footer-list-item {
+  margin-top: 9px;
+}
+
+.logoF {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.address {
+  font-style: inherit;
+  color: var(--btn-color);
+}
+
+.link-footer {
+  display: inline-block;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--color-zsix);
+  padding: 0;
+}
+
+.link-footer:hover,
+.link-footer:focus {
+  color: var(--primary-color);
+}
+
+/* ================ */
 
 .social {
   margin-left: 70px;
@@ -710,5 +791,3 @@ img {
 .fi-social-link {
   background-color: var(--footer-social-color-bg);
 }
-
-/* for social in footer end */
