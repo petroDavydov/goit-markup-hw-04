@@ -478,6 +478,9 @@ img {
   width: 44px;
   height: 44px;
   background-color: transparent;
+}
+
+.social-item:not(:last-child) {
   margin-right: 10px;
 }
 
